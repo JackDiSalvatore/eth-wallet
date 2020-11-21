@@ -18,6 +18,7 @@ contract EtherWallet {
         // on this smart contract
         if (msg.sender == owner) {
             to.transfer(amount);
+            return;
         }
         revert('Sender is not the owner');
     }
