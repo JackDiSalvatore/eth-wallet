@@ -22,7 +22,7 @@ contract EtherWallet {
         revert('Sender is not the owner');
     }
 
-    function balanceOf() view public return (uint) {
+    function balanceOf() view public returns (uint) {
         // "this" keyword referce to smart contract
         // "address(this)" transforms this smart contract
         // into an address type
