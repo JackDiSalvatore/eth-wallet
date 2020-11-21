@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.8.0;
 contract EtherWallet {
     address public owner;
 
-    constructor(address _owner) {
+    constructor(address _owner) public {
         owner = _owner;
     }
 
